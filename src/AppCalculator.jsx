@@ -4,7 +4,7 @@ import { AppButton } from './AppButton';
 import { AppCalculationHistory } from './AppCalculationHistory';
 import { useKalkulator } from './useKalkulator';
 
-function statusReducer(action) {
+function statusReducer(state, action) {
     switch (action.type) {
         case 'SET_A':
             return 'Zmodyfikowano wartość liczby A';
